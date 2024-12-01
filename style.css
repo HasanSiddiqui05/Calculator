@@ -1,0 +1,50 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100vh;
+}
+
+.cal{
+    display: flex;
+    flex-direction: column;
+    border: 3px white solid;
+    padding: 10px;
+    transform: scale(2);
+    gap: 10px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.btn, .display{
+    border: 1px white solid;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.btn{
+    justify-content: center;
+}
+.btn:hover{
+    background-color: gray;
+}
+
+.display{
+    justify-content: right;
+    height: 2em;
+}
+
+img{
+    height: 20px;
+    rotate: 180deg;
+}
