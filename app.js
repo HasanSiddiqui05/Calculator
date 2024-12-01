@@ -16,13 +16,11 @@ function display(num) {
 
 function back() {
     if (op === "") {
-        // If no operator is selected, modify fnum
         if (fnum !== "") {
             fnum = fnum.slice(0, -1);
             screen.innerHTML = fnum;
         }
     } else {
-        // If operator is selected, modify lnum
         if (lnum !== "") {
             lnum = lnum.slice(0, -1);
             screen.innerHTML = lnum;
