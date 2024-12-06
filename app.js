@@ -16,6 +16,7 @@ function display(num) {
 
 function back() {
     if (op === "") {
+
         if (fnum !== "") {
             fnum = fnum.slice(0, -1);
             screen.innerHTML = fnum;
